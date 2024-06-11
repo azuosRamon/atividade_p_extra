@@ -1,4 +1,4 @@
-a
+
 
 const menu = document.getElementById("nav");
 const top_menu = menu.offsetTop;
