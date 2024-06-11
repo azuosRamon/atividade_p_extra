@@ -1,0 +1,82 @@
+.grid {
+    display: grid;
+}
+.contatos {
+    grid-area: contatos;
+}
+
+.form-grid {
+    grid-area: formulario;
+}
+/* 
+#Celular (Mobile)
+
+#Pequenos: até 360px de largura.
+
+#Médios: 361px a 480px de Largura.
+
+#Grandes: 481px a 768px de largura.
+
+#Tablet Retrato: 769px a 1024px de largura.
+
+#Paisagem: 1025px a 1280px de largura.
+
+#Desktop Comum: 1281px a 1440px de largura.
+
+Grande: acima de 1441px de largura.
+*/
+@media screen and (min-width: 930px){
+    .grid-template-areas-footer {
+        grid-template-columns: 30% 30% 40%;
+        grid-template-areas: 
+            "contatos contatos formulario"
+        ;
+    }
+    main {
+        padding-top: 100px;
+    }
+    .coluna-1 {
+        grid-template-columns: 95%;
+    }
+    .coluna-2 {
+        grid-template-columns: 2fr 2fr;
+    }
+    .coluna-3 {
+        grid-template-columns: 2fr 2fr 3fr;
+        grid-template-rows: 2fr;
+    }
+    .coluna-3-main {
+        grid-template-columns: 25% 50% 25%;
+    }
+    .coluna-4-menu {
+        grid-template-columns: 3fr 2fr 2fr 2fr;
+    }
+    
+}
+@media screen and (max-width: 930px){
+    .grid-template-areas-footer {
+        grid-template-areas: 
+            "contatos"
+            "formulario"
+        ;
+    }
+    main {
+        padding-top: 220px;
+    }
+    .coluna-1 {
+        grid-template-columns: 1fr;
+    }
+    .coluna-2 {
+        grid-template-columns: 1fr;
+    }
+    .coluna-3 {
+        grid-template-columns: 1fr;    
+    }
+    .coluna-3-main {
+        grid-template-columns: 1fr;
+    }
+    .coluna-4-menu {
+        grid-template-columns: 1fr;
+    }
+    
+}
