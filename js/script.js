@@ -146,12 +146,12 @@ var menu_toggle = document.getElementById('background-menu-responsivo');
 function abre_menu(){
     menu_toggle.classList.remove('desativa-menu');
     menu_toggle.classList.add('ativa-menu');
-    
+    menu_toggle.style.display = 'block';
 }
 function fecha_menu(){
     menu_toggle.classList.remove('ativa-menu');
     menu_toggle.classList.add('desativa-menu');
-    
+    menu_toggle.style.display = 'none';
 }
 
 window.scrollTo(0,1);

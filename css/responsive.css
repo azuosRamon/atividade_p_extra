@@ -61,7 +61,8 @@
         min-height: 100%;
         background-color: rgba(0, 0, 0, .5);
         z-index: 9;
-        
+        overflow: hidden;
+        display: none;
     }
     #menu_responsivo {
         width: 50%;
@@ -75,6 +76,7 @@
     }
     .desativa-menu {
         transform: translate(100%, 0);
+        
     }
     .ativa-menu {
         transform: translate(0, 0);
